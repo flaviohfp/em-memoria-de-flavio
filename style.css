@@ -20,13 +20,18 @@ body {
   color: var(--text);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 40px 20px;
 }
 
-/* Container principal */
 .memorial {
   display: flex;
   flex-direction: column;
@@ -34,7 +39,6 @@ body {
   gap: 30px;
 }
 
-/* Cartão principal */
 .card {
   background: var(--panel);
   padding: 40px 30px;
@@ -46,7 +50,6 @@ body {
   backdrop-filter: blur(6px);
 }
 
-/* Foto */
 .profile-img {
   width: 180px;
   height: 180px;
@@ -57,7 +60,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* Títulos e texto */
 .name {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
@@ -72,7 +74,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Botões */
 .actions {
   display: flex;
   justify-content: center;
@@ -109,21 +110,14 @@ body {
   color: var(--accent);
 }
 
-/* Rodapé */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   text-align: center;
   color: var(--muted);
   font-size: 13px;
   padding: 10px 0;
-  background: rgba(0, 0, 0, 0.8); /* opcional, para melhorar a visibilidade */
+  background: rgba(0, 0, 0, 0.8);
 }
 
-
-/* Responsivo */
 @media (max-width: 480px) {
   .card {
     padding: 30px 20px;
