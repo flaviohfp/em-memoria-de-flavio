@@ -3,7 +3,7 @@
   --panel: #111111;
   --text: #e6e6e6;
   --muted: #9ca3af;
-  --accent: #c8a54a; /* dourado elegante */
+  --accent: #c8a54a;
   --radius: 20px;
   --shadow: 0 0 40px rgba(0, 0, 0, 0.6);
 }
@@ -65,19 +65,6 @@ body {
   margin-bottom: 6px;
 }
 
-.years {
-  color: var(--muted);
-  font-size: 15px;
-  margin-bottom: 18px;
-}
-
-.quote {
-  font-style: italic;
-  color: #d1d5db;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
 .text {
   font-size: 15px;
   color: var(--text);
@@ -124,10 +111,17 @@ body {
 
 /* Rodapé */
 .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   color: var(--muted);
   font-size: 13px;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.8); /* opcional, para melhorar a visibilidade */
 }
+
 
 /* Responsivo */
 @media (max-width: 480px) {
